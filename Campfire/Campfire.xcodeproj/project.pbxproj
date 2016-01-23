@@ -13,10 +13,20 @@
 		9F38AA7A1C4CD8BA006EB81F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F38AA781C4CD8BA006EB81F /* LaunchScreen.storyboard */; };
 		9F38AA851C4CD8BA006EB81F /* CampfireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38AA841C4CD8BA006EB81F /* CampfireTests.swift */; };
 		9F38AA901C4CD8BA006EB81F /* CampfireUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38AA8F1C4CD8BA006EB81F /* CampfireUITests.swift */; };
-		9F38AAA01C4CDFBD006EB81F /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38AA9F1C4CDFBD006EB81F /* CustomTableViewController.swift */; };
 		9FF304251C4F71990015C66F /* ObjectsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF304241C4F71990015C66F /* ObjectsTableViewController.swift */; };
 		9FF304631C4F8B370015C66F /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF304621C4F8B370015C66F /* BaseTableViewCell.swift */; };
 		9FF398681C4EFEAF00F25AA7 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF398671C4EFEAF00F25AA7 /* PostViewController.swift */; };
+		9FF3BAC51C51735200524006 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF3BAC41C51735200524006 /* PreviewViewController.swift */; };
+		9FF3BAC71C5176B600524006 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF3BAC61C5176B600524006 /* CoreLocation.framework */; };
+		9FF3BAC91C5176CD00524006 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF3BAC81C5176CD00524006 /* Security.framework */; };
+		9FF3BACB1C51770000524006 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF3BACA1C51770000524006 /* CoreGraphics.framework */; };
+		9FF3BACD1C51771F00524006 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF3BACC1C51771F00524006 /* CFNetwork.framework */; };
+		9FF3BACF1C51774600524006 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF3BACE1C51774600524006 /* MobileCoreServices.framework */; };
+		9FF3BAD11C51775100524006 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF3BAD01C51775100524006 /* QuartzCore.framework */; };
+		9FF3BAD31C5177C600524006 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF3BAD21C5177C600524006 /* AudioToolbox.framework */; };
+		9FF3BAD51C5177CE00524006 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF3BAD41C5177CE00524006 /* StoreKit.framework */; };
+		9FF3BAD71C5177DA00524006 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF3BAD61C5177DA00524006 /* libz.tbd */; };
+		9FF3BAD91C5177E900524006 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF3BAD81C5177E900524006 /* libsqlite3.tbd */; };
 		D2CA5088676458FC65C8112C /* Pods_Campfire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CD81F31F87CE1DC78615BD /* Pods_Campfire.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,10 +63,20 @@
 		9F38AA8B1C4CD8BA006EB81F /* CampfireUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampfireUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F38AA8F1C4CD8BA006EB81F /* CampfireUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampfireUITests.swift; sourceTree = "<group>"; };
 		9F38AA911C4CD8BA006EB81F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F38AA9F1C4CDFBD006EB81F /* CustomTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
 		9FF304241C4F71990015C66F /* ObjectsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectsTableViewController.swift; sourceTree = "<group>"; };
 		9FF304621C4F8B370015C66F /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		9FF398671C4EFEAF00F25AA7 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostViewController.swift; path = ../PostViewController.swift; sourceTree = "<group>"; };
+		9FF3BAC41C51735200524006 /* PreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		9FF3BAC61C5176B600524006 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9FF3BAC81C5176CD00524006 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9FF3BACA1C51770000524006 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9FF3BACC1C51771F00524006 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		9FF3BACE1C51774600524006 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		9FF3BAD01C51775100524006 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9FF3BAD21C5177C600524006 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9FF3BAD41C5177CE00524006 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		9FF3BAD61C5177DA00524006 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		9FF3BAD81C5177E900524006 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +84,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FF3BAD91C5177E900524006 /* libsqlite3.tbd in Frameworks */,
+				9FF3BAD71C5177DA00524006 /* libz.tbd in Frameworks */,
+				9FF3BAD51C5177CE00524006 /* StoreKit.framework in Frameworks */,
+				9FF3BAD31C5177C600524006 /* AudioToolbox.framework in Frameworks */,
+				9FF3BAD11C51775100524006 /* QuartzCore.framework in Frameworks */,
+				9FF3BACF1C51774600524006 /* MobileCoreServices.framework in Frameworks */,
+				9FF3BACB1C51770000524006 /* CoreGraphics.framework in Frameworks */,
+				9FF3BACD1C51771F00524006 /* CFNetwork.framework in Frameworks */,
+				9FF3BAC91C5176CD00524006 /* Security.framework in Frameworks */,
+				9FF3BAC71C5176B600524006 /* CoreLocation.framework in Frameworks */,
 				D2CA5088676458FC65C8112C /* Pods_Campfire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,6 +127,16 @@
 		3E2E0239A216352F1B357912 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9FF3BAD81C5177E900524006 /* libsqlite3.tbd */,
+				9FF3BAD61C5177DA00524006 /* libz.tbd */,
+				9FF3BAD41C5177CE00524006 /* StoreKit.framework */,
+				9FF3BAD21C5177C600524006 /* AudioToolbox.framework */,
+				9FF3BAD01C51775100524006 /* QuartzCore.framework */,
+				9FF3BACE1C51774600524006 /* MobileCoreServices.framework */,
+				9FF3BACC1C51771F00524006 /* CFNetwork.framework */,
+				9FF3BACA1C51770000524006 /* CoreGraphics.framework */,
+				9FF3BAC81C5176CD00524006 /* Security.framework */,
+				9FF3BAC61C5176B600524006 /* CoreLocation.framework */,
 				13CD81F31F87CE1DC78615BD /* Pods_Campfire.framework */,
 			);
 			name = Frameworks;
@@ -132,10 +172,10 @@
 				9F38AA761C4CD8BA006EB81F /* Assets.xcassets */,
 				9F38AA781C4CD8BA006EB81F /* LaunchScreen.storyboard */,
 				9F38AA7B1C4CD8BA006EB81F /* Info.plist */,
-				9F38AA9F1C4CDFBD006EB81F /* CustomTableViewController.swift */,
 				9FF304241C4F71990015C66F /* ObjectsTableViewController.swift */,
 				9FF304621C4F8B370015C66F /* BaseTableViewCell.swift */,
 				9FF398671C4EFEAF00F25AA7 /* PostViewController.swift */,
+				9FF3BAC41C51735200524006 /* PreviewViewController.swift */,
 			);
 			path = Campfire;
 			sourceTree = "<group>";
@@ -345,9 +385,9 @@
 			files = (
 				9FF304251C4F71990015C66F /* ObjectsTableViewController.swift in Sources */,
 				9FF398681C4EFEAF00F25AA7 /* PostViewController.swift in Sources */,
-				9F38AAA01C4CDFBD006EB81F /* CustomTableViewController.swift in Sources */,
 				9FF304631C4F8B370015C66F /* BaseTableViewCell.swift in Sources */,
 				9F38AA701C4CD8BA006EB81F /* AppDelegate.swift in Sources */,
+				9FF3BAC51C51735200524006 /* PreviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

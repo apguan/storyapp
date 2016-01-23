@@ -15,7 +15,7 @@ class ObjectsTableViewController: PFQueryTableViewController {
     
     override func queryForTable() -> PFQuery {
         
-        let query = PFQuery(className: "Object")
+        let query = PFQuery(className: "UserData")
         query.cachePolicy = .CacheElseNetwork
         query.orderByDescending("createdAt")
         return query
@@ -34,6 +34,13 @@ class ObjectsTableViewController: PFQueryTableViewController {
         
         cell.elapsedTime.text = object?.objectForKey("elapsedTime") as? String
         
+        
+       let imageFile = object?.objectForKey("image") as? PFFile
+        cell.cellImageView.image = UIImage(named: "placeholder")
+        cell.cellImageView.file = imageFile
+        cell.cellImageView.loadInBackground()
+        
+        
         return cell
     }
     
@@ -47,17 +54,42 @@ class ObjectsTableViewController: PFQueryTableViewController {
         return height
     }
     
-    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         if indexPath.row + 1 > self.objects?.count
-        {
-            self.loadNextPage()
-            tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        }
-        else
-        {
+            {
+                self.loadNextPage()
+                tableView.deselectRowAtIndexPath(indexPath, animated: true)
+            }
+            else
+            {
             self.performSegueWithIdentifier("showDetail", sender: self)
+            }
+        
         }
+
+
+   func performForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     
+        if segue.identifier == "showDetail"
+        {
+            let indexPath = self.tableView.indexPathForSelectedRow
+            let detailVC = segue.destinationViewController as! PreviewViewController
+          
+            let object = self.objectAtIndexPath(indexPath)
+           
+            detailVC.titleString = object?.objectForKey("title") as! String
+            detailVC.imageFile = object?.objectForKey("image") as! PFFile
+            self.tableView.deselectRowAtIndexPath(indexPath!, animated: true)
+        }
     }
 }
+
+
+
+
+
+
+
+
+

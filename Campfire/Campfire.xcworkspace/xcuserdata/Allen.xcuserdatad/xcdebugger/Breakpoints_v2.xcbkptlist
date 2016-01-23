@@ -2,4 +2,54 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Campfire/PreviewViewController.swift"
+            timestampString = "475204155.374547"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Campfire.PreviewViewController.viewDidLoad (Campfire.PreviewViewController)() -&gt; ()"
+                  moduleName = "Campfire"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Allen/Desktop/storyapp/Campfire/Campfire/PreviewViewController.swift"
+                  timestampString = "475204155.394678"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "306">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Campfire.PreviewViewController.(viewDidLoad (Campfire.PreviewViewController) -&gt; () -&gt; ()).(closure #1)"
+                  moduleName = "Campfire"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Allen/Desktop/storyapp/Campfire/Campfire/PreviewViewController.swift"
+                  timestampString = "475204155.395908"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "23">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -8,6 +8,8 @@
 
 import UIKit
 import Parse
+import ParseUI
+import Bolts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Parse.setApplicationId("64keHQvKcTDaJyLfninzU01n5ZxMc6eJ2GELdLMf",
             clientKey: "CzFmtd7pKPAeIr7HjAmgX4eLLCLMRQEo9jo3WYym")
+        
         return true
     }
 
