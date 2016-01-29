@@ -10,7 +10,8 @@ import UIKit
 import Parse
 import ParseUI
 
-class BaseTableViewCell: PFTableViewCell {
+class BaseTableViewCell: PFTableViewCell
+{
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var numComments: UILabel!
     @IBOutlet weak var likes: UILabel!

@@ -13,9 +13,9 @@
 		9F38AA7A1C4CD8BA006EB81F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F38AA781C4CD8BA006EB81F /* LaunchScreen.storyboard */; };
 		9F38AA851C4CD8BA006EB81F /* CampfireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38AA841C4CD8BA006EB81F /* CampfireTests.swift */; };
 		9F38AA901C4CD8BA006EB81F /* CampfireUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38AA8F1C4CD8BA006EB81F /* CampfireUITests.swift */; };
+		9FCBC0551C59849500ADBDED /* ComposeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCBC0541C59849500ADBDED /* ComposeTableViewController.swift */; };
 		9FF304251C4F71990015C66F /* ObjectsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF304241C4F71990015C66F /* ObjectsTableViewController.swift */; };
 		9FF304631C4F8B370015C66F /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF304621C4F8B370015C66F /* BaseTableViewCell.swift */; };
-		9FF398681C4EFEAF00F25AA7 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF398671C4EFEAF00F25AA7 /* PostViewController.swift */; };
 		9FF3BAC51C51735200524006 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF3BAC41C51735200524006 /* PreviewViewController.swift */; };
 		9FF3BAC71C5176B600524006 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF3BAC61C5176B600524006 /* CoreLocation.framework */; };
 		9FF3BAC91C5176CD00524006 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF3BAC81C5176CD00524006 /* Security.framework */; };
@@ -63,9 +63,9 @@
 		9F38AA8B1C4CD8BA006EB81F /* CampfireUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampfireUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F38AA8F1C4CD8BA006EB81F /* CampfireUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampfireUITests.swift; sourceTree = "<group>"; };
 		9F38AA911C4CD8BA006EB81F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FCBC0541C59849500ADBDED /* ComposeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeTableViewController.swift; sourceTree = "<group>"; };
 		9FF304241C4F71990015C66F /* ObjectsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectsTableViewController.swift; sourceTree = "<group>"; };
 		9FF304621C4F8B370015C66F /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
-		9FF398671C4EFEAF00F25AA7 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostViewController.swift; path = ../PostViewController.swift; sourceTree = "<group>"; };
 		9FF3BAC41C51735200524006 /* PreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		9FF3BAC61C5176B600524006 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		9FF3BAC81C5176CD00524006 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -172,9 +172,9 @@
 				9F38AA761C4CD8BA006EB81F /* Assets.xcassets */,
 				9F38AA781C4CD8BA006EB81F /* LaunchScreen.storyboard */,
 				9F38AA7B1C4CD8BA006EB81F /* Info.plist */,
+				9FCBC0541C59849500ADBDED /* ComposeTableViewController.swift */,
 				9FF304241C4F71990015C66F /* ObjectsTableViewController.swift */,
 				9FF304621C4F8B370015C66F /* BaseTableViewCell.swift */,
-				9FF398671C4EFEAF00F25AA7 /* PostViewController.swift */,
 				9FF3BAC41C51735200524006 /* PreviewViewController.swift */,
 			);
 			path = Campfire;
@@ -384,7 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FF304251C4F71990015C66F /* ObjectsTableViewController.swift in Sources */,
-				9FF398681C4EFEAF00F25AA7 /* PostViewController.swift in Sources */,
+				9FCBC0551C59849500ADBDED /* ComposeTableViewController.swift in Sources */,
 				9FF304631C4F8B370015C66F /* BaseTableViewCell.swift in Sources */,
 				9F38AA701C4CD8BA006EB81F /* AppDelegate.swift in Sources */,
 				9FF3BAC51C51735200524006 /* PreviewViewController.swift in Sources */,

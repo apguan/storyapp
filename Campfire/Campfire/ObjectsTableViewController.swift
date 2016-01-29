@@ -63,7 +63,7 @@ class ObjectsTableViewController: PFQueryTableViewController {
             }
             else
             {
-            self.performSegueWithIdentifier("showDetail", sender: self)
+                self.performSegueWithIdentifier("showDetail", sender: self)
             }
         
         }
@@ -78,7 +78,7 @@ class ObjectsTableViewController: PFQueryTableViewController {
           
             let object = self.objectAtIndexPath(indexPath)
            
-            detailVC.titleString = object?.objectForKey("title") as! String
+            detailVC.textViewString = object?.objectForKey("title") as! String
             detailVC.imageFile = object?.objectForKey("image") as! PFFile
             self.tableView.deselectRowAtIndexPath(indexPath!, animated: true)
         }

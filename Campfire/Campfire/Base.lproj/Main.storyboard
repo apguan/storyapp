@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bkK-9c-8EJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bkK-9c-8EJ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -52,7 +52,7 @@
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YpK-ti-rAm" customClass="PFImageView">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YpK-ti-rAm" customClass="PFImageView">
                                             <rect key="frame" x="23" y="94" width="554" height="163"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="163" id="tht-8L-6kR"/>
@@ -66,13 +66,11 @@
                                             </constraints>
                                             <state key="normal" title="Button" image="likeButton"/>
                                         </button>
-                                        <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ukl-Sb-twi">
+                                        <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Short description of text " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ukl-Sb-twi">
                                             <rect key="frame" x="23" y="8" width="554" height="87"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                                         </textView>
                                     </subviews>
                                     <constraints>
@@ -125,28 +123,28 @@
                             <color key="tintColor" red="0.20000000000000001" green="0.69411764710000001" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                         </segmentedControl>
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="1F9-Bk-Y5z">
-                            <inset key="imageInsets" minX="0.0" minY="2" maxX="0.0" maxY="5"/>
-                            <color key="tintColor" red="0.15686274509803921" green="0.52549019607843139" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                            <inset key="imageInsets" minX="-15" minY="0.0" maxX="5" maxY="0.0"/>
+                            <color key="tintColor" red="0.20000000000000001" green="0.69411764710000001" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="BYg-8s-vxX" kind="presentation" id="s9W-CG-zjW"/>
+                                <segue destination="BYg-8s-vxX" kind="presentation" identifier="" modalTransitionStyle="crossDissolve" id="WxR-58-VVN"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="parseClassName" value="UserData"/>
                         <userDefinedRuntimeAttribute type="number" keyPath="objectsPerPage">
-                            <integer key="value" value="7"/>
+                            <integer key="value" value="8"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <segue destination="6md-G6-POH" kind="show" identifier="showDetail" action="showDetailViewController:sender:" id="neA-04-eCk"/>
+                        <segue destination="6md-G6-POH" kind="presentation" identifier="showDetail" modalTransitionStyle="crossDissolve" id="neA-04-eCk"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nAS-Hq-hN6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1661" y="344"/>
         </scene>
-        <!--Post-->
+        <!--Preview View Controller-->
         <scene sceneID="H5p-As-kek">
             <objects>
                 <viewController id="6md-G6-POH" customClass="PreviewViewController" customModule="Campfire" customModuleProvider="target" sceneMemberID="viewController">
@@ -168,26 +166,30 @@
                                             <constraint firstAttribute="height" constant="204" id="oGK-G1-EKj"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Luh-Cq-J4v">
-                                        <rect key="frame" x="21" y="8" width="554" height="274"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XCT-sA-kf6">
+                                        <rect key="frame" x="21" y="68" width="554" height="221"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="554" id="aAS-d5-cJj"/>
-                                            <constraint firstAttribute="height" constant="274" id="yzb-w9-SaZ"/>
+                                            <constraint firstAttribute="height" constant="221" id="5ZG-fV-wQf"/>
+                                            <constraint firstAttribute="width" constant="554" id="dFp-Y4-bcb"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="hxP-iH-de1" firstAttribute="top" secondItem="Luh-Cq-J4v" secondAttribute="bottom" constant="8" symbolic="YES" id="76c-3n-85l"/>
-                                    <constraint firstItem="Luh-Cq-J4v" firstAttribute="trailing" secondItem="hxP-iH-de1" secondAttribute="trailing" id="90l-Jh-ML1"/>
-                                    <constraint firstItem="Luh-Cq-J4v" firstAttribute="leading" secondItem="gGH-Mc-qsh" secondAttribute="leading" constant="21" id="BIT-kX-hDV"/>
-                                    <constraint firstItem="Luh-Cq-J4v" firstAttribute="top" secondItem="gGH-Mc-qsh" secondAttribute="topMargin" id="JqP-m8-RAY"/>
+                                    <constraint firstItem="hxP-iH-de1" firstAttribute="top" secondItem="XCT-sA-kf6" secondAttribute="bottom" constant="1" id="NVL-75-7wB"/>
                                     <constraint firstAttribute="bottom" secondItem="hxP-iH-de1" secondAttribute="bottom" constant="106" id="Q8A-d6-Sud"/>
-                                    <constraint firstItem="hxP-iH-de1" firstAttribute="leading" secondItem="Luh-Cq-J4v" secondAttribute="leading" id="kCs-GB-APT"/>
-                                    <constraint firstAttribute="trailing" secondItem="Luh-Cq-J4v" secondAttribute="trailing" constant="25" id="tKh-Ya-Pw0"/>
+                                    <constraint firstItem="XCT-sA-kf6" firstAttribute="top" secondItem="gGH-Mc-qsh" secondAttribute="top" constant="68" id="dYP-TN-bqS"/>
+                                    <constraint firstItem="XCT-sA-kf6" firstAttribute="trailing" secondItem="hxP-iH-de1" secondAttribute="trailing" id="eMH-aE-fdF"/>
+                                    <constraint firstAttribute="trailing" secondItem="XCT-sA-kf6" secondAttribute="trailing" constant="25" id="pjr-HA-3Hv"/>
+                                    <constraint firstItem="XCT-sA-kf6" firstAttribute="leading" secondItem="hxP-iH-de1" secondAttribute="leading" id="vX7-bG-Pui"/>
+                                    <constraint firstItem="XCT-sA-kf6" firstAttribute="leading" secondItem="gGH-Mc-qsh" secondAttribute="leading" constant="21" id="vfR-fE-GFl"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="6md-G6-POH" id="qPd-Mq-imy"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -203,7 +205,7 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Post" id="kOv-il-kTk">
+                    <navigationItem key="navigationItem" id="kOv-il-kTk">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="Nui-qA-N9r">
                             <color key="tintColor" red="0.20000000000000001" green="0.69411764710000001" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -213,19 +215,19 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="imageView" destination="hxP-iH-de1" id="3sK-WN-MHY"/>
+                        <outlet property="imageView" destination="hxP-iH-de1" id="PPu-Sq-t6Z"/>
                         <outlet property="scrollView" destination="gGH-Mc-qsh" id="sIu-Ib-0eM"/>
-                        <outlet property="textView" destination="Luh-Cq-J4v" id="ODu-d0-HAN"/>
+                        <outlet property="textView" destination="XCT-sA-kf6" id="0vI-fm-W4k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rqG-T4-h5L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2366" y="344"/>
+            <point key="canvasLocation" x="1661" y="1062"/>
         </scene>
-        <!--Post View Controller-->
+        <!--Post-->
         <scene sceneID="6r3-Bf-FGO">
             <objects>
-                <viewController id="nzl-Mn-03D" customClass="PostViewController" customModule="Campfire" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Post" id="nzl-Mn-03D" customClass="ComposeTableViewController" customModule="Campfire" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6RT-Zt-z08"/>
                         <viewControllerLayoutGuide type="bottom" id="bcw-Nf-b5V"/>
@@ -234,8 +236,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="What's on your mind?" translatesAutoresizingMaskIntoConstraints="NO" id="jZP-kt-rNZ">
-                                <rect key="frame" x="20" y="0.0" width="560" height="328"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="What's on your mind?" translatesAutoresizingMaskIntoConstraints="NO" id="AAC-wM-qhB">
+                                <rect key="frame" x="20" y="202" width="560" height="289"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="140" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITW-WG-pT7">
+                                <rect key="frame" x="539" y="173" width="41" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Short description" translatesAutoresizingMaskIntoConstraints="NO" id="jZP-kt-rNZ">
+                                <rect key="frame" x="20" y="0.0" width="560" height="165"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="scrollIndicatorInsets" minX="0.0" minY="50" maxX="0.0" maxY="0.0"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -245,25 +260,30 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="b8V-xG-QX6">
+                    <navigationItem key="navigationItem" title="Post" id="b8V-xG-QX6">
                         <barButtonItem key="leftBarButtonItem" systemItem="undo" id="t0w-7G-evx">
                             <color key="tintColor" red="0.20000000000000001" green="0.69411764710000001" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="bkK-9c-8EJ" kind="presentation" id="1J3-3c-PPK"/>
+                                <segue destination="bkK-9c-8EJ" kind="presentation" modalTransitionStyle="crossDissolve" id="cKu-4S-N8a"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Post" id="7E8-sM-fgH">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="7E8-sM-fgH">
                             <color key="tintColor" red="0.20000000000000001" green="0.69411764710000001" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="submitStory:" destination="nzl-Mn-03D" id="8qX-Vl-aws"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="cancelPost" destination="t0w-7G-evx" id="0md-ZZ-Ti6"/>
+                        <outlet property="characterLimit" destination="ITW-WG-pT7" id="CKd-O8-UiA"/>
                         <outlet property="postView" destination="7E8-sM-fgH" id="om1-Br-y4s"/>
+                        <outlet property="shortDescription" destination="jZP-kt-rNZ" id="hSl-S3-B5S"/>
+                        <outlet property="typeStory" destination="AAC-wM-qhB" id="FsG-cj-4A6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KfQ-EF-7UT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2313" y="1058"/>
+            <point key="canvasLocation" x="2329" y="344"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4jM-R0-ECE">
@@ -281,7 +301,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dR3-8a-ztW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1020" y="344"/>
+            <point key="canvasLocation" x="980" y="344"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tPf-ed-gxQ">
@@ -299,7 +319,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mtv-3s-LzK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1661" y="1058"/>
+            <point key="canvasLocation" x="1649" y="-440"/>
         </scene>
     </scenes>
     <resources>
@@ -307,6 +327,6 @@
         <image name="likeButton" width="42" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WNJ-er-UvD"/>
+        <segue reference="cKu-4S-N8a"/>
     </inferredMetricsTieBreakers>
 </document>

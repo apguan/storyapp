@@ -9,19 +9,20 @@
 import UIKit
 import Parse
 
-class PreviewViewController: UIViewController{
+class PreviewViewController: UIViewController, UIScrollViewDelegate{
    
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var imageView: UIImageView!
     
-    var titleString: String!
+    var textViewString: String!
     var imageFile: PFFile!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = self.titleString
+        self.title = self.textViewString
+        
         
         self.imageFile.getDataInBackgroundWithBlock { (imageData, error) -> Void in
         
@@ -41,4 +42,9 @@ class PreviewViewController: UIViewController{
         
     }
     
+    func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
+        
+        return self.imageView
+        
+    }
 }
